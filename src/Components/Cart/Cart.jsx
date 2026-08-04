@@ -68,12 +68,12 @@ export default function Cart() {
 <img src={product.product.imageCover} className='w-100' alt="" />
     </div>
     <div className="col-md-11 row gy-2 justify-content-between">
-<div className='col-9'>
+<div className='col-6'>
   <h6>{product.product.title.split(" ").slice(0,2).join(" ")}</h6>
 <h6 className='text-main'>{product.price} EGP</h6>
 <button onClick={()=>removeCart(product.product._id)} className='btn m-0 p-0'> <i className='fas fa-regular fa-trash text-main'></i>Remove</button>
 </div>
-<div className='col-3'>
+<div className='col-6 text-center'>
   <button onClick={()=>updateCart(product.product._id , product.count+1)} className='btn border-main btn-sm'>+</button>
   <span>{product.count}</span>
   <button onClick={()=>updateCart(product.product._id , product.count-1)} className='btn border-main btn-sm'>-</button>
