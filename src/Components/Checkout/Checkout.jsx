@@ -30,7 +30,7 @@ useEffect(() => {
         },onSubmit:handleCheckout
     })
   return <>
-  <div className="w-75 py-3 mx-auto">
+  <div className=" w-75 py-3 mx-auto">
     <h2 className='p-3'>Checkout</h2>
     <form onSubmit={formik.handleSubmit}>
         <div className='my-2'>
