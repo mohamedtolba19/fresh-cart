@@ -55,7 +55,7 @@ else{
   return <>
  
   <div className="row  px-2 ">
-    <div className="col-lg-6 o order-lg-0 order-1   register-info d-flex  flex-column justify-content-center px-2 ">
+    <div className="col-lg-6 text-center order-lg-0 order-1   register-info d-flex  flex-column justify-content-center px-2 ">
 <div>
   <p className='fw-bolder fs-1'>welcome to <br/>fresh <span className='text-main'>cart</span></p>
 <p className='fw-bold lead'>create your account and start  <br/>shopping the latest in fashion,  <br/> & electronics and more .</p>
