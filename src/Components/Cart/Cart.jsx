@@ -60,20 +60,20 @@ export default function Cart() {
           </div>
 
          </div>
-  {cartDetails?.products?.length>0?<div className=' m-4 p-3 '>
+  {cartDetails?.products?.length>0?<div className=' m-2 p-1 '>
     <h3 className='fw-bolder'>Shop Cart </h3>
     <h3 className='fw-bold'>Total Cart Price : <span className='text-main'>{cartDetails.totalCartPrice} EGP</span></h3>
-   {cartDetails?.products?.map((product)=><div key={product.product._id} className='row border-bottom my-2 py-3 '>
+   {cartDetails?.products?.map((product)=><div key={product.product._id} className='row border-bottom my-2 py-3 gy-2 '>
     <div className="col-md-1">
 <img src={product.product.imageCover} className='w-100' alt="" />
     </div>
-    <div className="col-md-11 d-flex justify-content-between">
-<div>
+    <div className="col-md-11 row gy-2 justify-content-between">
+<div className='col-9'>
   <h6>{product.product.title.split(" ").slice(0,2).join(" ")}</h6>
 <h6 className='text-main'>{product.price} EGP</h6>
 <button onClick={()=>removeCart(product.product._id)} className='btn m-0 p-0'> <i className='fas fa-regular fa-trash text-main'></i>Remove</button>
 </div>
-<div>
+<div className='col-3'>
   <button onClick={()=>updateCart(product.product._id , product.count+1)} className='btn border-main btn-sm'>+</button>
   <span>{product.count}</span>
   <button onClick={()=>updateCart(product.product._id , product.count-1)} className='btn border-main btn-sm'>-</button>
