@@ -73,10 +73,12 @@ export default function Cart() {
 <h6 className='text-main'>{product.price} EGP</h6>
 <button onClick={()=>removeCart(product.product._id)} className='btn m-0 p-0'> <i className='fas fa-regular fa-trash text-main'></i>Remove</button>
 </div>
-<div className='col-6 text-center'>
-  <button onClick={()=>updateCart(product.product._id , product.count+1)} className='btn border-main btn-sm'>+</button>
+<div className='col-6 '>
+<div className='d-flex justify-content-center'>
+    <button onClick={()=>updateCart(product.product._id , product.count+1)} className='btn border-main btn-sm'>+</button>
   <span>{product.count}</span>
   <button onClick={()=>updateCart(product.product._id , product.count-1)} className='btn border-main btn-sm'>-</button>
+</div>
 </div>
     </div>
   
