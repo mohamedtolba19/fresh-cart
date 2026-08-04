@@ -69,7 +69,7 @@ export default function Cart() {
     </div>
     <div className="col-md-11 d-flex justify-content-between">
 <div>
-  <h6>{product.product.title}</h6>
+  <h6>{product.product.title.split(" ").slice(0,2).join(" ")}</h6>
 <h6 className='text-main'>{product.price} EGP</h6>
 <button onClick={()=>removeCart(product.product._id)} className='btn m-0 p-0'> <i className='fas fa-regular fa-trash text-main'></i>Remove</button>
 </div>

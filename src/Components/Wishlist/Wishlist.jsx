@@ -56,15 +56,16 @@ export default function Wishlist() {
 <div className="col-md-1">
   <img src={product.imageCover} className='w-100' alt="" />
 </div>
-<div className="col-md-11 d-flex justify-content-between">
-  <div>
-    <h3>{product.title}</h3>
+<div className="col-md-11 row gy-2 justify-content-between">
+  <div className='col-md-9'>
+    <h3>{product.title.split(" ").slice(0,2).join(" ")}</h3>
     <h4>{product.brand.name}</h4>
     <span>Price {product.price} EGP</span>
+  
   </div>
-  <div>
-      <button onClick={()=>addProduct(product._id)} className='btn bg-main text-white w-100'>Add Product</button>
-      <button onClick={()=>removeWishlist(product._id)} className='btn bg-danger my-2 text-white w-100'>Remove </button>
+  <div className='text-center col-md-3'>
+      <button onClick={()=>addProduct(product._id)} className='btn  bg-main text-white w-100'>Add Product</button>
+        <button onClick={()=>removeWishlist(product._id)} className=' btn w-25 btn-outline-danger  my-2  w-100'>Remove </button>
   </div>
 </div>
   </div>):<div className='d-flex justify-content-center align-items-center'>

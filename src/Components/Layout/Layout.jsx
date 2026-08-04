@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 export default function Layout({userData , logOut}) {
   return <>
   <Navbar userData = {userData } logOut={logOut}/>
-  <div className="container-fluid ">
+  <div className="container-fluid py-3">
  <Outlet></Outlet>
   </div>
  

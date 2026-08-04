@@ -49,8 +49,8 @@ setIsLoading(false)
 
   return <>
 
-  <div className="row px-5 py-3 ">
-    <div className="col-lg-6 col-12 o order-lg-0 order-1 register-info d-flex  flex-column justify-content-center px-2 ">
+  <div className="row px-2 ">
+    <div className="col-lg-6 text-center  col-12 o order-lg-0 order-1 register-info d-flex  flex-column justify-content-center px-2 ">
 <div>
   <p className='fw-bolder fs-1'>welcome to <br/>fresh <span className='text-main'>cart</span></p>
 <p className='fw-bold lead'>create your account and start  <br/>shopping the latest in fashion,  <br/> & electronics and more .</p>
@@ -104,7 +104,7 @@ setIsLoading(false)
         <label htmlFor="name" className='fw-bolder'>Password</label>
             <div className=" d-flex justify-content-between align-items-center border border-3 rounded-3 p-2">
               <i class="fa-solid fa-lock"></i>
-      <input placeholder='Enter Your Password password' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.password} type="password" name = "password" id='password' className='form-control fw-bold' />
+      <input placeholder='Enter Your Password ' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.password} type="password" name = "password" id='password' className='form-control fw-bold' />
       </div>
        {formik.errors.password && formik.touched.password?<div className='alert'>{formik.errors.password}</div>:""}
   </div>
